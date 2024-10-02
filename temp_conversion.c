@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - convert temperature between celcius to fehrenheit.
+ * main - convert temperature between celsius to fahrenheit.
  *
  * Return: 0
  *
@@ -19,13 +19,13 @@ int main(void)
 	if (scale == 'C' || scale == 'c')
 	{
 		convert = (temp * 9 / 5.0) + 32;
-		printf("The Fehrenheit equivalent of %.2lfC is %.2lfF.\n",
+		printf("The Fahrenheit equivalent of %.2lfC is %.2lfF.\n",
 				temp, convert);
 	}
 	else if (scale == 'F' || scale == 'f')
 	{
 		convert = (temp - 32) * 5 / 9.0;
-		printf("The Celcius equivalent of %.2lfF is %.2lfC.\n",
+		printf("The Celsius equivalent of %.2lfF is %.2lfC.\n",
 				temp, convert);
 	}
 	else
