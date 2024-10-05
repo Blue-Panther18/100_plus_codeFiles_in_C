@@ -7,19 +7,20 @@
  */
 int main(void)
 {
-	int a, b, temp;
+	int a, b, num1, num2, temp;
 
 	printf("Enter the two numbers: ");
 	scanf("%d %d", &a, &b);
+	num1 = a, num2 = b;
 
-	while (b != 0)
+	while (num2 != 0)
 	{
-		temp = b;
-		b = a % b;
-		a = temp;
+		temp = num2;
+		num2 = num1 % num2;
+		num1 = temp;
 	}
 
-	printf("The GCD is: %d\n", temp);
+	printf("The GCD of %d and %d is: %d\n", a, b, temp);
 
 	return (0);
 }
