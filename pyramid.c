@@ -30,10 +30,12 @@ void print_pyramid(int n)
 {
 	for (int i = 1; i <= n; i++)
 	{
-		for (int j = n - i; j > 0; j--)
+		for (int j = (n - i) / 2; j > 0; j--)
 			printf(" ");
 		for (int j = 0; j < i; j++)
 			printf("*");
+		for (int j = (n - i) / 2; j > 0; j--)
+			printf(" ");
 		printf("\n");
 	}
 }
